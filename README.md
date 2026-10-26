@@ -7,7 +7,7 @@ Built for the **OpenCV AI Competition 2026, powered by AWS** (featured path: **A
 
 | | |
 |---|---|
-| **Live demo** | [http://YOUR-EC2-PUBLIC-IP:5000] |
+| **Live demo** | http://13.50.225.81:5000 |
 | **Demo video** | [YouTube unlisted link] |
 | **Technical report** | [link to report PDF in this repo, or Devpost] |
 | **Code** | this repository |
