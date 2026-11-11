@@ -114,18 +114,6 @@ gunicorn -w 1 --threads 4 --timeout 120 -b 0.0.0.0:5000 app:app
 
 For a permanent service, use a systemd unit with the same `ExecStart` command. Set `REBORN_BUCKET` and `AWS_DEFAULT_REGION` as environment variables if you use S3.
 
-## Evaluation
-
-| Test | Images | Result |
-|---|---|---|
-| Classifier on held-out TrashNet images | [N] | [XX%] accuracy |
-| Team's own phone photos (full agent) | [N] | [XX%] correct material |
-| Own photos sent to human review | [N] | [XX%] |
-| Own photos wrongly accepted without review | [N] | [XX%] |
-| Average processing time per image on [instance] | [N] | [X.X] s |
-
-Evaluation scripts and raw outputs: [docs/evaluation.md].
-
 ### Failure cases (real examples)
 
 - [Example 1: e.g. clear plastic bottle on a brown table predicted as cardboard, confidence 0.64, sent to human review.]
@@ -168,9 +156,7 @@ Evaluation scripts and raw outputs: [docs/evaluation.md].
 
 Hazardous-item classes (batteries, e-waste), live video, offline on-device mode, Tamil voice, a real reuse marketplace, training on photos with real-world backgrounds, and recycler partnerships.
 
-## Team
 
-[Name, role] · [Name, role] · [Name, role] · [Name, role]
 
 ## Credits
 
